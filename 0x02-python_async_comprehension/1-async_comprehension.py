@@ -11,14 +11,3 @@ async def async_comprehension() -> List[float]:
         returns the 10 random numbers
     """
     return [val async for val in async_generator()]
-
-
-"""
-    measure_runtime coroutine that will execute
-    async_comprehension four times in parallel using
-    asyncio.gather.
-"""
-
-"""
-    returns the measurement of time and total execution
-"""
