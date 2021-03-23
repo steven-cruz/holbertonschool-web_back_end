@@ -68,4 +68,4 @@ class LFUCache(BaseCaching):
     @staticmethod
     def get_first_list(array):
         """ Get first element of list or None """
-        return array[0] if array else 
+        return array[0] if array else None
