@@ -8,4 +8,4 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
         Returns a tuple, containing a starting index
         and a completion index
     """
-    return((page_size * (page - 1)), page_size * page)
+    return ((page_size * (page - 1)), page_size * page)
