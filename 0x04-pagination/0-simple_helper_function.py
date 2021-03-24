@@ -3,7 +3,7 @@
 from typing import Tuple
 
 
-def index_range(page, page_size):
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
         Returns a tuple, containing a starting index
         and a completion index
