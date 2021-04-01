@@ -25,7 +25,7 @@ def unauthorized(error) -> str:
     """
         Request unauthorized
     """
-    return jsonify({"error": "Unauthorized"})
+    return jsonify({"error": "Unauthorized"}), 401
 
 if __name__ == "__main__":
     host = getenv("API_HOST", "0.0.0.0")
