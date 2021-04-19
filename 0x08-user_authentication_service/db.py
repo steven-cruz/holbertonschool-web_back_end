@@ -8,6 +8,7 @@ from sqlalchemy.orm.session import Session
 
 from user import Base
 from user import User
+from typing import TypeVar
 
 from sqlalchemy.exc import InvalidRequestError
 from sqlalchemy.orm.exc import NoResultFound
