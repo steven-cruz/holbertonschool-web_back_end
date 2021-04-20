@@ -26,7 +26,10 @@ class Auth:
         self._db = DB()
 
     def register_user(self, email: str, password: str) -> User:
-        """ Registers and returns a new user if email isn't listed"""
+        """
+            Register a new user in the database, if the email
+            exists it returns a <user's email> already exists message.
+        """
         try:
             user = self._db.find_user_by(email=email)
         except NoResultFound:
