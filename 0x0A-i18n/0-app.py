@@ -2,15 +2,18 @@
 """
     basic flask app
 """
-from flask import Flask
+from flask import Flask, request, render_template
 
 
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@app.route('/', methods=['GET'], strict_slashes=False)
 def index():
-    return 'Hola mundo!'
+    """
+        return 0-index.html
+    """
+    return render_template('0-index.html')
 
 
 if __name__ == "__main__":
