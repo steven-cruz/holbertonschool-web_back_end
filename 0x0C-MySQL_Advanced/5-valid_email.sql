@@ -8,7 +8,7 @@ FOR EACH ROW
 BEGIN
 IF NEW.email <> OLD.email
 THEN
-    SEND NEW.valid_email = 0;
+    SET NEW.valid_email = 0;
 END IF;
 END
 $$
