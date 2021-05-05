@@ -1,2 +1,2 @@
 // script that inserts a document in the collection school
-db.mongo.save({name: 'Holberton school'});
+db.school.save({name: 'Holberton school'});
